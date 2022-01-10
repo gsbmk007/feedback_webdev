@@ -40,14 +40,80 @@
     display: flex;
     min-height: 100vh;
   }
-  
   .container {
     flex: 000 1 1000px;
     margin: auto;
     padding: 5px;
     box-shadow: 0 40px 40px #CFD8DC,50;
   }
-  
+  .hometext{
+    position: absolute;
+    width: px;
+    height: 35px;
+    margin-left: 600px;
+    margin-top: 60px;
+    font-family: IBM Plex Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 39px;
+    letter-spacing: 1px;
+    color: #9575CD;    
+  }
+  .subtext{
+    position: absolute;
+    width: fit-content;
+    height: 35px;
+    margin-left:1150px;
+    margin-top: 72px;
+    font-family: IBM Plex Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 39px;
+    letter-spacing: 1px;
+    word-spacing: 30px;
+    color: #9575CD;
+  }
+  .dropdown{
+    position: absolute;
+    width: 150px;
+    height: 40.66px;
+    text-align:center;
+    padding: 12px 0;
+    margin-left: 50px;
+    color: #666;
+    margin-top: 140px;
+    background: linear-gradient(0deg, #E6EEF8, #E6EEF8), #CFD8DC;
+    box-shadow: -16px -16px 40px rgba(253, 255, 255, 0.8), 16px 16px 40px rgba(187, 195, 206, 0.6);
+    border-radius: 16px;
+  }
+  .dropdown:after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  .dropdown:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    color: #666;
+  }
+  .dropdown:hover:after {
+    -webkit-transform: scale(2) rotate(180deg);
+    transform: scale(2) rotate(180deg);
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
+
   .screen {
     height: 500px;
     position: relative;
@@ -211,4 +277,40 @@
     .screen-body-item {
       padding: 0;
     }
+  }
+
+  .subtext {
+    display: inline-block;
+    position: absolute;
+    color: #9575CD;
+  }
+  
+  .subtext:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(149, 117, 205, 0.25);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    border-radius: 5px;
+  }
+  
+  .subtext:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .arrow{
+    border: #666;
+    border-width: 0 100px 100px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 0px;
+    margin-top: 0px;
   }
