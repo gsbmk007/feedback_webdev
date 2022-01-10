@@ -1,0 +1,214 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background:#DCE5F2 100%;
+    font-size: 12px;
+  }
+  
+  body, button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  .element{
+    position: absolute;
+    width: 117px;
+    height: 121px;
+    margin-left: 150px;
+    margin-top: 140px;
+    
+    background: linear-gradient(0deg, #E6EEF8, #E6EEF8), #CFD8DC;
+    box-shadow: -16px -16px 40px rgba(253, 255, 255, 0.8), 16px 16px 40px rgba(187, 195, 206, 0.6);
+    border-radius: 16px;
+  }
+  .element-bottom{
+    position: absolute;
+    width: 117px;
+    height: 121px;
+    margin-left: 1150px;
+    margin-top: 640px;
+    
+    background: linear-gradient(0deg, #E6EEF8, #E6EEF8), #CFD8DC;
+    box-shadow: -16px -16px 40px rgba(253, 255, 255, 0.8), 16px 16px 40px rgba(187, 195, 206, 0.6);
+    border-radius: 16px;
+  }
+  .background {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 000 1 1000px;
+    margin: auto;
+    padding: 5px;
+    box-shadow: 0 40px 40px #CFD8DC,50;
+  }
+  
+  .screen {
+    height: 500px;
+    position: relative;
+    background: #DCE5F2;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #9575CD;
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #9575CD;
+  }
+  
+  .app-contact {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #888;
+  }
+  .sub-app-contact {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 12px;
+    color: #888;
+  }
+  .sub-element{
+    position: absolute;
+    width: 63px;
+    height: 67px;
+    margin-left: 115px;
+    margin-top: 100px;
+    
+    background: linear-gradient(0deg, #E6EEF8, #E6EEF8), #CFD8DC;
+    box-shadow: -16px -16px 80px rgba(149, 117, 205, 0.8), 16px 16px 80px rgba(149, 117, 205, 0.6);
+    border-radius: 16px;
+  }
+  .sub-element-bottom{
+    position: absolute;
+    width: 63px;
+    height: 67px;
+    margin-left: 1240px;
+    margin-top: 727px;
+    
+    background: linear-gradient(0deg, #E6EEF8, #E6EEF8), #CFD8DC;
+    box-shadow: -16px -16px 80px rgba(149, 117, 205, 0.8), 16px 16px 80px rgba(149, 117, 205, 0.6);
+    border-radius: 16px;
+  }
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-top: 40px;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 20px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform:none;
+    color: #9575CD;
+    outline: none;
+    transition: border-color .2s;
+  }
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #9575CD;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #9575CD;
+  }
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
