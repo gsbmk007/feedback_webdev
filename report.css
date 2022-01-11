@@ -412,7 +412,38 @@
     }
     .words{
       position: relative;
-      font-size: 200;
-      margin: 20px;
+      font-size: 17px;
+      margin-left: 80px;
       line-height: 35px;
+      word-break: normal;
     }
+    .word{
+      position: relative;
+      font-size: 20px;
+      margin: 20px;
+      font-weight: 900;
+    }
+    .purp-l{
+      position: absolute;
+      width: 45px;
+      height: 1px;
+      border: 2px solid #9575CD;
+      transform: rotate(0deg);
+      border-radius: 10px;
+      margin-top: 50px;
+    }
+    .purp-l1{
+      position: absolute;
+      width: 60px;
+      height: 0px;
+      border: 1px solid #9575CD;
+      transform: rotate(0deg);
+      border-radius: 10px;
+      margin-top: 275px;
+      margin-left: 80px;
+    }
+    .subword{
+      position: relative;
+      font-size: 17px;
+      margin-left: 50px;
+      }
