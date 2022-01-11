@@ -14,11 +14,6 @@
     justify-content: space-between;
     padding: 15px 20px;
   }
-  li{
-    display: inline-block;
-    font-size: 1000;
-    margin-left: 500px;
-  }
   
   body, button, input {
     font-family: 'Montserrat', sans-serif;
@@ -146,8 +141,7 @@
     }
   
     .screen-body-item {
-      flex: 1;
-      padding: 50px;
+      width: max-content;
     }
   
     .screen-body-item.left {
@@ -416,30 +410,9 @@
         inset -4px -4px 6px 0 rgba(255,255,255,.5),
         inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
     }
-  
-    .purp{
-        max-width: 186px;
-        color: rgba(149, 117, 205, 1);
-        font-size: 20px;
-        letter-spacing: 1px;
-        text-align: left;
-        line-height: 30px;
-        font-family: IBM Plex Mono, sans-serif;
-    }
-    .purp-l {
-      display: flex;
-      max-width: 33px;
-      height: 0px;
-      width: 33px;
-      border-color: rgba(149, 117, 205, 1);
-      border-width: 2px;
-      border-style: solid;}
-    .black{
-      max-width: 186px;
-      color: #666;
-      font-size: 20px;
-      letter-spacing: 1px;
-      text-align: left;
-      line-height: 30px;
-      font-family: IBM Plex Mono, sans-serif;
+    .words{
+      position: relative;
+      font-size: 200;
+      margin: 20px;
+      line-height: 35px;
     }
